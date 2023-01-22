@@ -25,7 +25,7 @@ class Solution:
 
             f += 1
 
-        # if elements on the left half are still left
+        # if elements on the right half are still left
 
         if i > m:
             while j <= r:
@@ -33,7 +33,7 @@ class Solution:
                 f += 1
                 j += 1
         
-        # if elements on the right half are still left
+        # if elements on the left half are still left
         else:
 
             while i <= m:
@@ -61,7 +61,7 @@ class Solution:
 
             # merge sorted halves
             self.merge(arr, l, m, r)
-            
+
         return arr
 
 
