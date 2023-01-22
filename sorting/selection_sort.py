@@ -3,6 +3,7 @@ class Solution:
     def selectionSort(self, arr,n):
         #code here
         
+        # find the index of smallest element in each iteration and select its element to be swapped
         for i in range(0, n-1):
             mini = i
             for j in range(i+1, n):
