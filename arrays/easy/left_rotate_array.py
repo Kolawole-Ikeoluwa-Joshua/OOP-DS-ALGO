@@ -1,5 +1,6 @@
 class Solution:
     def leftRotate(self, arr, k, n):
+        # left rotate
         temp = [0] * n
         
         """
@@ -7,19 +8,16 @@ class Solution:
         """
 
         mod = k % n        
-        
         for i in range(0, n):
             temp[i] = arr[(i + mod) % n]
+
+        
+        # update arr with rotation
             
         for i in range(n):
             arr[i] = temp[i]
             
         return arr
-
-
-
-
-
 
 
 
