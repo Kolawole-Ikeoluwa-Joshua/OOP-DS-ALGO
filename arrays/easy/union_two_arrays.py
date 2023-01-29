@@ -9,18 +9,65 @@ class Solution:
         :param m: size of sorted array b
         :return:  The union of both arrays as a list
         '''
+        
+
+        """
+        solution 1: using set and sorted functions in python
+        """
+        # code here
+        # return sorted(set(a+b))
+
+    
+        """
+        solution 2: using two pointers
+        """
         # code here
 
-        """
-        using set and sorted functions in python3
+        union = []
         
-        return sorted(set(a+b))
+        # two pointers
+        i = 0
+        j = 0
+        
+        # compare elements in both arrays
+        while i < n and j < m:
+            if a[i] <= b [j]:
+                # current size of union array
+                s = len(union)
+                
+                # check if element to be inserted already in union array
+                if s == 0 or union[s-1] != a[i]:
+                    union.append(a[i])
+                i += 1
+                
+            else:
+                s = len(union)
+                if s == 0 or union[s-1] != b[j]:
+                    union.append(b[j])
+                j += 1
+                
+        
+        # if element left in first array after comparison
+        
+        while i < n:
+            s = len(union)
+            if union[s-1] != a[i]:
+                union.append(a[i])
+            i += 1
+            
+        #   if element left in second array after comparison
+        
+        while j < m:
+            s = len(union)
+            if union[s-1] != b[j]:
+                union.append(b[j])
+                
+            j += 1
+            
+            
+        return union        
 
-        """
-
-        """
-        using two pointers
-        """
+        
 
 
 
