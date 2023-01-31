@@ -7,6 +7,7 @@ class Solution:
     def findZeroes(self, arr, n, m):
 
         # code here
+        # sliding window method
         maxConsecOne = 0
         start = 0
         zeroCount = 0
