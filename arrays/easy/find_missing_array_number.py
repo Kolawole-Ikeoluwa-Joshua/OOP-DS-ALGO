@@ -12,7 +12,7 @@ class Solution:
 
         hash_index = [0] * N
 
-        # traverse through array A and get index of each element, if sorted in increasing order
+        # traverse through array A. Get index of each element, assuming elements are sorted in increasing order
 
         for i in range(len(A)):
             element = A[i]
@@ -21,7 +21,7 @@ class Solution:
             # store element index in hash
             hash_index[index] += 1
 
-        # return element without an index in hash
+        # return element without an index from hash
 
         for i in range(len(hash_index)):
             if hash_index[i] == 0:
