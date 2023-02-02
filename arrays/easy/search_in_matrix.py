@@ -6,7 +6,11 @@ class Solution:
         and a number X is given find whether element X is present in the matrix or not
         '''
 
-        # code here
+        # solution 1
+        '''
+        time: O(Nlog(M))
+        spaceL O(1)
+        
         # for each row in matrix, binary search for X
         for i in range(N):
             l = 0
@@ -29,6 +33,37 @@ class Solution:
                     return 1
 
         return 0
+        '''
+
+        # solution 2
+
+        '''
+        start from the top right corner of the matrix
+        check if element == X and return ;  
+        else if element > X, move left and check element;
+        else move to new row if element < X
+        Stop when search goes out of bounds.
+
+        time: O(N)
+        space: O(1)
+        '''
+
+        i = 0
+        j = M-1
+
+        while i < N and j >= 0:
+            if mat[i][j] == X:
+                return 1
+
+            elif mat[i][j] > X:
+                j -= 1
+
+            else:
+                i += 1
+
+        return 0
+
+
 		    
 
 
