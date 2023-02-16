@@ -33,6 +33,14 @@ class Solution:
         '''
 
         # solution 2 - intuitive approach
+        '''
+        Time: O(log n)
+        Space: O(1)
+        
+        '''
+
+
+
         n = len(nums)
         # single element array == peak
         if n == 1:
