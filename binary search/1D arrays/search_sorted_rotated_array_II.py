@@ -8,10 +8,11 @@ class Solution:
         # code here
 
         '''
-        Avg
+        Avg:
         Time: O(log n)
         Space: O(1)
 
+        Worst:
         Time: O(n)
         Space: O(1)
         '''
