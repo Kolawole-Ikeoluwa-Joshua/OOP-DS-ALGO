@@ -7,6 +7,8 @@ Given a sorted array arr[] of size N. Find the element that appears only once in
 
 approach:
 
+we can observe that for each pair, 
+first element takes even position and second element takes odd position
 
 Time: O(log n)
 Space: O(1)
@@ -28,6 +30,7 @@ class Solution:
                 l = m + 1
 
             else:
+                # if conditions are not satisfied, single element must be before mid
                 r = m
 
         return arr[l]
