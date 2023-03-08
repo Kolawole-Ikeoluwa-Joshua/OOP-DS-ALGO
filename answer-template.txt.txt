@@ -1,0 +1,20 @@
+'''
+
+
+'''
+
+
+class Solution:
+    def function(self,):
+
+        '''
+        Time:
+        Space:
+        '''
+        # code here
+
+
+
+ob = Solution()
+ans = ob.function()
+print(ans) 
