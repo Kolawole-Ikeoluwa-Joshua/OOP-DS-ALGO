@@ -19,7 +19,7 @@ Space: O(1)
 
 class Solution:
     def reverseWords(self, s: str) -> str:
-        k = s.split()[::-1]
+        k = s.split()[::-1] #split each word and reverse string
         s=' '.join(k)
         return s
 
