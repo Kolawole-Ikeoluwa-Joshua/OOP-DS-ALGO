@@ -11,7 +11,7 @@ class Node:
         self.prev = None
 
 class Solution:
-    def deleteNode(self,head, x):
+    def deleteNode(head, x):
 
         '''
         Time: O(n)
@@ -41,3 +41,34 @@ class Solution:
             curr.prev.next = curr.next
             
         del curr
+
+
+# create a doubly linked list
+dll = Node(1)
+dll.next = Node(2)
+dll.next.prev = dll
+dll.next.next = Node(3)
+dll.next.next.prev = dll.next
+dll.next.next.next = Node(4)
+dll.next.next.next.prev = dll.next.next
+
+# print the original DLL
+
+print("Original DLL:")
+curr = dll
+while curr:
+    print(curr.data, end=' ')
+    curr = curr.next
+
+
+# delete node in the DLL
+Solution.deleteNode(head=dll, x=2)
+print()
+print()
+
+# print the DLL
+print("New DLL:")
+curr = dll
+while curr:
+    print(curr.data, end=' ')
+    curr = curr.next
