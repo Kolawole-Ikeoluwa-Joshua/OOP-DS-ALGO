@@ -20,6 +20,9 @@ class Solution:
         head.next = next node, 
         head.next.next = previous node.
 
+        by swapping the direction of the pointers in this way for each node in the list, 
+        we effectively reverse the direction of the list and return the new head node of the reversed list.
+
 
         Time: O(n)
         Space: O(1)
