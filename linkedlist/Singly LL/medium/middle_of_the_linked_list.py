@@ -17,7 +17,7 @@ class Solution:
 
         '''
         approach:
-        # use two pointers, a slow pointer and a fast pointer
+        # tortoise and hare algorithm
         # The fast pointer moves twice as fast as the slow pointer
         # when fast pointer reaches end of the linked list, the slow pointer will be at the middle node.
 

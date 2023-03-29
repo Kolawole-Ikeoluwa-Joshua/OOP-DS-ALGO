@@ -30,7 +30,7 @@ class Solution:
         if not head or not head.next:
             return False
         
-        # use two pointers
+        # tortoise and hare algorithm
         slow, fast = head, head.next
 
         while fast and fast.next:
