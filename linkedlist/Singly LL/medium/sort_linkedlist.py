@@ -38,13 +38,12 @@ class Solution:
         left, right = self.sortList(head), self.sortList(mid)
 
         # merge the two sorted halves
-
         # create dummy list to return sorted order
         dummy = ListNode(0)
         curr = dummy
-
+        # sorting
         while left and right:
-            # sorting
+            
             if left.val < right.val:
                 # append to dummy
                 curr.next, left = left, left.next
