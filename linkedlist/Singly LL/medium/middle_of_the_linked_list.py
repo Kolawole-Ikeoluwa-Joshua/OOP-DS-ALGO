@@ -25,7 +25,11 @@ class Solution:
         Space: O(1)
         '''
         # code here
-        slow = fast = head
+        if not head:
+            return None
+        
+        slow = head
+        fast  = head
 
         while fast and fast.next:
             slow = slow.next
