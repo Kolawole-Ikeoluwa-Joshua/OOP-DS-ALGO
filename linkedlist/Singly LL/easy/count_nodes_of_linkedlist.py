@@ -28,7 +28,7 @@ class LinkedList:
 
 #  Function to count nodes of linkedlist
 class Solution:
-    def getCount(head_node):
+    def getCount(self, head_node):
 
         '''
         Time: O(n)
@@ -59,4 +59,6 @@ linked_list.append(3)
 linked_list.append(4)
 linked_list.append(5)
 
-print("Length of the linked list is:", Solution.getCount(linked_list.head))
+sol = Solution()
+
+print("Length of the linked list is:", sol.getCount(linked_list.head))

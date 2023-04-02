@@ -20,6 +20,7 @@ class Solution:
         # tortoise and hare algorithm
         # The fast pointer moves twice as fast as the slow pointer
         # when fast pointer reaches end of the linked list, the slow pointer will be at the middle node.
+        # Note: If the linked list has an even number of nodes, we return the second of the two middle nodes.
 
         Time: O(n)
         Space: O(1)
@@ -38,8 +39,8 @@ class Solution:
 
 
 
-# create a linked list: 1 -> 2 -> 3 -> 4 -> 5 -> None
-head = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
+# create a linked list: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> None
+head = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5, ListNode(6))))))
 
 # find the middle node
 middle = Solution.middleNode(head=head)

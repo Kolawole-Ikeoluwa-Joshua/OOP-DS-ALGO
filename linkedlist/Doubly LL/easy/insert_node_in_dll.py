@@ -11,7 +11,7 @@ class Node:
 		self.prev = None
 
 class Solution:
-    def addNode(head, p, data):
+    def addNode(self, head, p, data):
 
 
         '''
@@ -60,7 +60,8 @@ while curr:
 
 
 # add node in the DLL
-Solution.addNode(head=dll, p=3, data=5)
+sol = Solution()
+ans = sol.addNode(head=dll, p=3, data=5)
 print()
 print()
 

@@ -11,7 +11,7 @@ class Node:
         self.prev = None
 
 class Solution:
-    def deleteNode(head, x):
+    def deleteNode(self, head, x):
 
         '''
         Time: O(n)
@@ -62,7 +62,8 @@ while curr:
 
 
 # delete node in the DLL
-Solution.deleteNode(head=dll, x=2)
+sol = Solution()
+ans = sol.deleteNode(head=dll, x=2)
 print()
 print()
 

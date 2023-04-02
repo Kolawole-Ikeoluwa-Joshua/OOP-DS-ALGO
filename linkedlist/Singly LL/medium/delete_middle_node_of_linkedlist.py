@@ -52,8 +52,8 @@ class Solution:
 
 
 
-# create a linked list: 1 -> 2 -> 3 -> 4 -> 5 -> None
-head = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5)))))
+# create a linked list: 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> None
+head = ListNode(1, ListNode(2, ListNode(3, ListNode(4, ListNode(5, ListNode(6))))))
 
 # delete the middle node
 ll = Solution.deleteMiddle(head=head)
