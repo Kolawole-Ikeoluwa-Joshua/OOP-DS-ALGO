@@ -8,8 +8,8 @@ class Solution:
     def myPow(self, x, n):
 
         '''
-        Time:
-        Space:
+        Time: O(log n)
+        Space: O(log n)
         '''
         # code here
         # handle negative cases of n
